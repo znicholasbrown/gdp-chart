@@ -1,0 +1,74 @@
+body {
+  text-align: center;
+  font-family: 'Cinzel', serif;
+}
+
+.loading {
+  position: absolute;
+  border: 20px solid #D5DBDB;
+  border-top: 20px solid #D35400;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 25px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0%{ transform: rotate(0deg) }
+  100%{ transform: rotate(360deg) }
+}
+
+.headers {
+  display: none;
+}
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 2px 2px 10px black;
+}
+
+.root {
+  margin: 0 25px 25px 25px;
+}
+
+.root rect {
+  fill: #D35400;
+  stroke: none;
+  
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis text, .y.axis text {
+  font: 12px sans-serif;
+}
+
+.tooltip {
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 2px;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  font: 12px sans-serif;
+}
+.bar:hover {
+  fill: #2471A3;
+}
+.gdp {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 8px;
+  font-family: 'Cinzel', serif;
+}
